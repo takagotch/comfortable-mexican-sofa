@@ -18,12 +18,6 @@ rake 'comfy:cms_seeds:import[folder-name, site-identifier]'
 
 rake 'comfy:cms_seeds:export[site-identifier, folder-name]'
 
-rake 'comfy:cms_seeds:import[folder-name, site-identifier]'
-
-rake 'comfy:cms_seeds:export[site-identifier, folder-name]'
-
-
-
 ```
 
 ```ruby
