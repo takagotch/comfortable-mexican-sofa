@@ -210,6 +210,8 @@ end
 = render "comfy/admin/cms/categories/index", type: "YourCustomModel"
 = render 'comfy/admin/cms/categories/form', form: form
 
+<% img_url = cms_fragment_render(:icon, @cms_page) %>
+
 
 ```
 
