@@ -4,7 +4,7 @@
 https://github.com/comfy/comfortable-mexican-sofa
 
 ```
-gem "", ""
+gem 'comfortable_mexican_sofa', '~> 2.0.0'
 bundle install
 rails g comfy:cms
 rake db:migrate
@@ -100,6 +100,26 @@ ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
     {{ cms:asset layout_identifire, type: js, as: tag }}
   </body>
 </html>
+
+<html>
+  <body>
+    {{ cms:markdown content }}
+    <div class='footer'>
+      {{ cms:snippet copyright }}
+    </div>
+  </body>
+</html>
+
+{{ cms:text example }}
+{{ cms:textarea example }}
+
+
+
+
+
+
+
+
 
 ```
 
