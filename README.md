@@ -221,6 +221,13 @@ console.log("hello")
 [css]
 body(color: black)
 
+label: Footer File
+description: Footer File Description
+categories:
+  - purple
+  - beige
+  
+  
 ```
 
 
