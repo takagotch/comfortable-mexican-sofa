@@ -12,7 +12,7 @@ rake db:migrate
 comfy_route :cms_admin, path: "/admin"
 comfy_route :cms, path: "/"
 
-
+rails s
 
 ```
 
@@ -38,6 +38,18 @@ comfy_route :cms, path: "/"
   <div class="col-md-6">
     {{ cms:sysiwyg right-column }}
   </div>
+</div>
+
+<h1></h1>
+<img src="/rails/active_storage/foo/bar">
+<div class="row">
+  <div class="col-md-6">
+    Left Content
+  </div>
+  <div class="col-md-6">
+    Right Content
+  </div>
+</div>
 </div>
 
 
