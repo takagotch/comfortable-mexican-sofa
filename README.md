@@ -32,6 +32,8 @@ def set_locale
   end
 end
 
+config.revisions_limit = 25
+
 ```
 
 ```
