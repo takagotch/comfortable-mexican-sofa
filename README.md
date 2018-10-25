@@ -53,6 +53,13 @@ namespece :test do
   end
 end
 
+class EntriesController < ApplicationController
+  def index
+    @entries = Entry.all
+    render cms_page: '/entries'
+  end
+end
+
 
 class EntiresController < ApplicationController
   def index
