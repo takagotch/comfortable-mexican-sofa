@@ -28,6 +28,20 @@ comfy_route :cms, path: "/"
   </body>
 </html>
 
+
+{{ cms:textarea content }}
+<h1>{{ cms:text header }}</h1>
+<div class="row">
+  <div class="col-md-6">
+    {{ cms:markdown left-column }}
+  </div>
+  <div class="col-md-6">
+    {{ cms:sysiwyg right-column }}
+  </div>
+</div>
+
+
+
 ```
 
 
