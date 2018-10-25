@@ -202,6 +202,24 @@ your_locale:
         namespace:
           bar: Localized Bar
           
+layouts
+  +-- default
+  |  +-- nested
+  |    +-- content.html
+  +-- content.html
+  
+[attributes]
+label: Main Layout
+[content]
+<html>
+  <body>
+    {{ cms:wysiwyg content }}
+  </body>
+</html>
+[js]
+console.log("hello")
+[css]
+body(color: black)
 
 ```
 
