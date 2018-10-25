@@ -20,6 +20,8 @@ rails s
 ComfortableMexicanSofa::AccessControl::AdminAuthntication.username = 'username'
 ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
 
+comfy_route :cms, path: "/:locale/"
+
 
 ```
 
