@@ -16,7 +16,9 @@ rails s
 
 rake 'comfy:cms_seeds:import[folder-name, site-identifier]'
 
-rake ''
+rake 'comfy:cms_seeds:export[site-identifier, folder-name]'
+
+
 
 
 
