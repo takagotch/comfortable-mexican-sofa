@@ -112,9 +112,18 @@ ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
 
 {{ cms:text example }}
 {{ cms:textarea example }}
+{{ cms:markdown example }}
+{{ cms:number example }}
+{{ cms:date example }}
+{{ cms:datetime example }}
+{{ cms:datetime example, strftime: "at %I:%M%p" }}
+{{ cms:checkbox example }}
+{{ cms:file example }}
+{{ cms:file example, as: image, label: "My Photo", resize: "100x50>", gravity: "center", crop: "100x50+0_0"}}
+{{ cms:files example }}
+{{ cms:text meta-description, render: false }}
 
-
-
+<meta name="description" content="<%= cms_fragment_content("meta-description") %>">
 
 
 
