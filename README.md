@@ -60,8 +60,15 @@ class EntiresController < ApplicationController
   end
 end
 
-
-
+class EntriesController < ApplicationController
+  def index
+    render cms_layout: "layout_identifier", cms_fragments: {
+      fragment_identifier_a: 'content text',
+      fragment_identifier_b: {template: 'path/to/template' },
+      fragmetn_identifier_c: {partial: 'path/to/partial' }
+    }
+  end
+end
 
 ```
 
