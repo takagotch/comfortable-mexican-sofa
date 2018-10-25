@@ -25,6 +25,11 @@ comfy_route :cms, path: "/:locale/"
 # application_controller.rb
 before_action :set_locale
 def set_locale
+  if params[:locale].present?
+    I18n.locale = params[:locale]
+  else
+    I18n.locale = I18n.default_locale
+  end
 end
 
 ```
