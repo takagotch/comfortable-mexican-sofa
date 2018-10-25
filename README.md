@@ -34,6 +34,11 @@ end
 
 config.revisions_limit = 25
 
+class YourCustomModel < ActiveRecord::Base
+  cms_is_categorized
+end
+
+
 ```
 
 ```
