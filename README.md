@@ -169,7 +169,7 @@ end
   
 - @cms_site.snippets.for_category('carousel')
 
-= render "", type: "YourCustomModel"
+= render "comfy/admin/cms/categories/index", type: "YourCustomModel"
 = render 'comfy/admin/cms/categories/form', form: form
 
 
