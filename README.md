@@ -17,10 +17,15 @@ rails s
 ```
 
 ```ruby
+ComfortableMexicanSofa::AccessControl::AdminAuthntication.username = 'username'
+ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
+
 
 ```
 
 ```
+{{ cms:wysiwyg content }}
+
 <html>
   <body>
      <h1>{{ cms:text title }}</h1>
