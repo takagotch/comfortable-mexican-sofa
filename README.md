@@ -53,6 +53,16 @@ namespece :test do
   end
 end
 
+
+class EntiresController < ApplicationController
+  def index
+    @entries = Entry.all
+  end
+end
+
+
+
+
 ```
 
 ```
