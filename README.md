@@ -46,6 +46,12 @@ class YourCustomModel < ActiveRecord::Base
   cms_is_categorized
 end
 
+namespece :test do
+  task :prepare do
+    Comfy::Cms::Site.create!(identifier: 'site-identifier', hostname: 'localhost')
+    Rake::Task['comfy:cms_seeds:import[folder-name, site-identifier]'].invoke
+  end
+end
 
 ```
 
