@@ -125,8 +125,26 @@ ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
 
 <meta name="description" content="<%= cms_fragment_content("meta-description") %>">
 
+{{ cms:text title }}
+{{ cms:text description }}
+{{ cms:text open_graph_description, namespace: OG }}
+{{ cms:text open_graph_title, namespace: OG }}
 
+{{ cms:sinppet identifier }}
 
+{{ cms:helper some_helper, param_a, key: param_b }}
+{{ cms:partial "path/to/partial", local_var: "value" }}
+
+<%= render partial "path/to/partial", locals: {"local_var" => "value"} %>
+
+{{ cms:file_link file_id }}
+{{ cms:file graphic, render: false }}
+{{ cms:files attachments, render: false }}
+
+{{ cms:page_file_link graphic }}
+{{ cms:page_file_link attachments, filename: "cat.jpg" }}
+
+{{cms:asset layout_identifier, type: css, as: tag}}
 
 
 
@@ -136,6 +154,15 @@ ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
 comfy_csm_render_css GET /cms-css/:site_id/:identifier(/:cache_buster)(.:format)
 comfy_csm_render_js GET /cms-js/:site_id/:identifier(/:cache_buster)(.:format)
 
+your_locale:
+  comfy:
+    cms:
+      content:
+        tag:
+          foo: Localized Foo
+        namespace:
+          bar: Localized Bar
+          
 
 ```
 
