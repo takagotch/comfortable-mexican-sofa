@@ -159,7 +159,10 @@ config.revisions_limit = 25
 
 {{cms:asset layout_identifier, type: css, as: tag}}
 
-
+- Comfy::Cms::Snippet.for_category('carousel').each do |slide|
+  .slide= slide.content
+  
+- @cms_site.snippets.for_category('carousel')
 
 ```
 
