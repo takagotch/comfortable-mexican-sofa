@@ -92,7 +92,14 @@ ComfortableMexicanSofa::AccessControl::AdminAuthntication.password = 'password'
 <div class='left'>{{ cms:markdown left_column }}</div>
 <div class='right'>{{ cms:markdown right_column }}</div>
 
-
+<html>
+  <head>
+    {{ cms:asset layout_identifier, type: css, as: tag }}
+  </head>
+  <body>
+    {{ cms:asset layout_identifire, type: js, as: tag }}
+  </body>
+</html>
 
 ```
 
